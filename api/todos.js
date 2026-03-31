@@ -16,7 +16,9 @@ try {
 
 async function connectDB() {
   if (isConnected) return;
-  await mongoose.connect(process.env.MONGODB_URI);
+  const uri = process.env.MONGODB_URI;
+  console.log('URI starts with:', uri ? uri.substring(0, 20) : 'UNDEFINED');
+  await mongoose.connect(uri);
   isConnected = true;
 }
 
