@@ -34,7 +34,7 @@ function App() {
   };
 
   return (
-    <div style={{ maxWidth: '500px', margin: '50px auto', fontFamily: 'sans-serif' }}>
+    <div style={{ maxWidth: '500px', margin: '50px auto', fontFamily: 'sans-serif', color: '#ffffff' }}>
       <h1>Todo List</h1>
       <div style={{ display: 'flex', gap: '8px', marginBottom: '20px' }}>
         <input
@@ -62,7 +62,7 @@ function App() {
             <span style={{
               flex: 1,
               textDecoration: todo.completed ? 'line-through' : 'none',
-              color: todo.completed ? '#999' : '#000'
+              color: todo.completed ? '#888' : '#ffffff'
             }}>
               {todo.title}
             </span>
