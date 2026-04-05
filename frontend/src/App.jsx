@@ -43,7 +43,7 @@ function App() {
       padding: '30px 20px',
       minHeight: '100vh'
     }}>
-      <h1 style={{ textAlign: 'center', marginBottom: '24px' }}>Todo List</h1>
+      <h1 style={{ textAlign: 'center', marginBottom: '24px', color: '#ffffff' }}>Todo List</h1>
       <div style={{ display: 'flex', gap: '8px', marginBottom: '20px' }}>
         <input
           value={title}
